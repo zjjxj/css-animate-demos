@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition</title>
+    <style>
+       div{
+           width: 100px;
+           height: 50px;
+           background-color: red;
+           transition: all 2s linear;/*属性 时间 速率 延迟*/
+       }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <button>变宽变高</button>
+    <script>
+        var $=function (el) {
+            return document.querySelector(el);
+        }
+        $("button").onclick=function () {
+            $("div").style.width="200px";
+            $("div").style.height="200px";
+        }
+    </script>
+</body>
+</html>
